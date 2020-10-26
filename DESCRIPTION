@@ -1,15 +1,12 @@
 Package: mowater
-Title: What the Package Does (One Line, Title Case)
+Title: Datasets for Data Science
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to
-    pick a license
+Authors@R: c(
+    person(given = "Luke", family = "Durell", role = c("aut", "cre"), email = "luke_durell1@baylor.edu"),
+    person(given = "Mandy", family = "Hering", role = c("aut"), email = "mandy_hering@baylor.edu"))
+URL: https://github.com/lukedurell/mowater
+Description: Selected Datasets sourced from the MoWaTER project made accessible for Baylor University Introduction to Data Science students.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
