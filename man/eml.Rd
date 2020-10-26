@@ -3,17 +3,71 @@
 \docType{data}
 \name{eml}
 \alias{eml}
-\title{Eagle Mountain Lake Profile Data Sets}
+\title{Eagle Mountain Lake Data}
 \format{
-An object of class \code{"data.frame"}
+An object of class \code{"data.frame"} with 35532 rows and 7 variables:
+\describe{
+\item{Date-Time}{Date and two-hour time period measurement was taken}
+\item{Depth}{Profile Depth, measured in meters}
+\item{Temp}{Water Temperature, measured in degrees Celsius}
+\item{DO}{Dissolved Oxygen, measured in mg/L}
+\item{DOsat}{Dissolved Oxygen Saturation, measured as the percentage of DO relative to what the concentration would be in equilibrium with the atmosphere, calcualted as actual/expected}
+\item{pH}{pH, measured as standard pH from 0 (basic) to 14 (acidic)}
+\item{Cond}{Conductivity in water, measured in $\mu$S/cm (micro Siemens per centimeter)}
+}
+}
+\source{
+Professor Thad Scott from the Department of Biology at Baylor University provided this data.
+Tarrant Regional Water District (TRWD) provided funding for the first year of data collection, and Eagle Mountain Lake is owned and operated by TRWD.
+This lake is used to supply water to municipalities within the Dallas/Fort Worth area.
 }
 \usage{
 data(eml)
 }
 \description{
-Data from the Eagle Mountain Lake
+Profile data from Eagle Mountain Lake containing depth profiles of
+water quality variables. Data was collected beginning on April 25, 2019.
+It was collected at 21 depths, every 0.5 meters from 0.0 (surface) to 10.0 meters.
+A vertical profile measurement was taken once every two hours.
+All times are in UTC.
 }
 \examples{
-data(eml)
+data.plotter <- function(data, title, color){
+
+data.matrix <- as.matrix(data)
+
+levels.all <- seq(0,10, by=0.5)
+levels.1   <- seq(0,10, by=1)
+levels.2   <- levels.1[11:1]
+
+dates <- c("4/25", "5/08", "5/22", "6/05", "6/19",
+"7/03", "7/17", "7/31", "8/14", "8/28", "9/11")
+
+date.loc <- c(1, 157, 325, 493, 661, 829, 997,
+1165, 1333, 1501, 1669)
+
+image.plot(x = 1:1692, y = levels.all,
+z = (data.matrix[,21:1]), zlim = c(min(data.matrix),
+max(data.matrix)), xaxt = "n", yaxt = "n", ylab = "",
+xlab = "", col = color)
+
+axis(side = 2, at=levels.1, labels=levels.2,cex.axis=1.25 )
+axis(side=1, at=date.loc, labels=dates,cex.axis=1.25 )
+
+title(paste(title, ":  4-25-19 through 9-12-19", sep=""), cex.main=2.5, xlab="Date", ylab="Depth (m)", cex.lab=1.75)
+
+}
+
+nn=100
+colors=rainbow(nn)[1:(nn-10)]
+my.colors=colors[length(colors):1]
+
+my.colors<-viridis(nn)
+
+data.plotter(matrix(all.data[,3], ncol=21, byrow=T), "Temp (C)", my.colors)
+data.plotter(matrix(all.data[,4], ncol=21, byrow=T), "DO (mg/L)", my.colors)
+data.plotter(matrix(all.data[,5], ncol=21, byrow=T), "DO (\%sat)", my.colors)
+data.plotter(matrix(all.data[,6], ncol=21, byrow=T), "pH", my.colors)
+data.plotter(matrix(all.data[,7], ncol=21, byrow=T), "Conductivity (uS/cm)", my.colors)
 }
 \keyword{datasets}
