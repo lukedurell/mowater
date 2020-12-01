@@ -25,8 +25,6 @@
 #' Tarrant Regional Water District (TRWD) provided funding for the first year of data collection, and Eagle Mountain Lake is owned and operated by TRWD.
 #' This lake is used to supply water to municipalities within the Dallas/Fort Worth area.
 #'
-#'
-#'
 #' @examples
 #' EML_full$Cond
 "EML_full"

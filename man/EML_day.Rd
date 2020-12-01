@@ -5,16 +5,7 @@
 \alias{EML_day}
 \title{EML_day}
 \format{
-An object of class \code{"data.frame"} with 35532 rows and 7 variables:
-\describe{
-\item{Date-Time}{Date and two-hour time period measurement was taken}
-\item{Depth}{Profile Depth, measured in meters}
-\item{Temp}{Water Temperature, measured in degrees Celsius}
-\item{DO}{Dissolved Oxygen, measured in mg/L}
-\item{DOsat}{Dissolved Oxygen Saturation, measured as the percentage of DO relative to what the concentration would be in equilibrium with the atmosphere, calcualted as actual/expected}
-\item{pH}{pH, measured as standard pH from 0 (basic) to 14 (acidic)}
-\item{Cond}{Conductivity in water, measured in \eqn{\mu}S/cm (micro Siemens per centimeter)}
-}
+An object of class \code{"data.frame"} with 240 rows and 10 variables including date.time, depth, water quality measurements, and a depth group factor.
 }
 \source{
 Professor Thad Scott from the Department of Biology at Baylor University provided this data.
@@ -25,11 +16,7 @@ This lake is used to supply water to municipalities within the Dallas/Fort Worth
 data(EML_day)
 }
 \description{
-Profile data from Eagle Mountain Lake containing depth profiles of
-water quality variables. Data was collected beginning on April 25, 2019.
-It was collected at 21 depths, every 0.5 meters from 0.0 (surface) to 10.0 meters.
-A vertical profile measurement was taken once every two hours.
-All times are in UTC.
+Single day measurement of EML data on 4/25/2019
 }
 \examples{
 EML_day$DepthLevels
