@@ -36,8 +36,6 @@ from 0.0 (surface) to 10.0 meters. A vertical profile measurement was taken once
 All times are in UTC.
 }
 \examples{
-library(viridis)
-
 #- check out data
 head(eml)
 
@@ -47,7 +45,7 @@ hist(eml$DOsat)
 #- profile plots
 dosat  <- eml$DOsat
 depths <- seq(0, 10, length.out = 21)
-colors <- inferno(length(dosat)/21, alpha = .5)
+colors <- viridis::inferno(length(dosat)/21, alpha = .5)
 
 plot(dosat[1:21], depths,
 type = "l", xlab = "DOsat",

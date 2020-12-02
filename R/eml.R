@@ -30,6 +30,7 @@
 #' This lake is used to supply water to municipalities within the Dallas/Fort Worth area.
 #' See http://ec2-18-223-67-99.us-east-2.compute.amazonaws.com/test2/testIndex.html
 #'
+#' @importFrom viridis viridis
 #' @examples
 #' #- check out data
 #' head(eml)
