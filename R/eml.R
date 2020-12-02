@@ -11,10 +11,10 @@
 #' @docType data
 #'
 #' @usage
-#' EML_full
-#' data(EML_full) # loads into working evironment
+#' eml
+#' data(eml) # loads into working evironment
 #'
-#' @format An object of class \code{"data.frame"} with 35532 rows and 7 variables:
+#' @format An object of class \code{"data.frame"} with 35532 rows and 7 columns:
 #' \describe{
 #'   \item{Date-Time}{Date and two-hour time period measurement was taken}
 #'   \item{Depth}{Profile Depth, measured in meters}
@@ -34,13 +34,13 @@
 #' library(viridis)
 #'
 #' #- check out data
-#' head(EML_full)
+#' head(eml)
 #'
 #' #- histogram of variable of interest
-#' hist(EML_full$DOsat)
+#' hist(eml$DOsat)
 #'
 #' #- profile plots
-#' dosat  <- EML_full$DOsat
+#' dosat  <- eml$DOsat
 #' depths <- seq(0, 10, length.out = 21)
 #' colors <- inferno(length(dosat)/21, alpha = .5)
 #'
@@ -56,4 +56,4 @@
 #' col = colors[i])
 #' }
 #'
-"EML_full"
+"eml"
