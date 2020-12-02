@@ -5,7 +5,8 @@
 \alias{tds}
 \title{Colorado River Total Dissolved Solids}
 \format{
-An object of class \code{"data.frame"} with 672 rows and 4 variables: year, date, tds in Lees and Hoover dams.
+An object of class \code{"data.frame"} with 672 rows
+and 4 variables: year, date, tds in Lees and Hoover dams.
 }
 \source{
 Unknown
