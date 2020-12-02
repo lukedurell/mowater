@@ -13,14 +13,12 @@
 #' @format An object of class \code{"data.frame"} with 5164 rows and
 #' 7 columns:
 #' \describe{
-#'   \item{entity}
-#'   \item{code}
-#'   \item{year}
+#'   \item{entity}{}
+#'   \item{code}{}
+#'   \item{year}{}
 #'   \item{urban}{Percent of urban population with access to clean drinking water}
 #'   \item{rural}{Percent of rural population with access to clean drinking water}
 #'   \item{pop}{Entity population}
 #' }
-#'
-#' @examples
 #'
 "urbanrural"

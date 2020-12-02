@@ -31,8 +31,6 @@
 #' See http://ec2-18-223-67-99.us-east-2.compute.amazonaws.com/test2/testIndex.html
 #'
 #' @examples
-#' library(viridis)
-#'
 #' #- check out data
 #' head(eml)
 #'
@@ -42,7 +40,7 @@
 #' #- profile plots
 #' dosat  <- eml$DOsat
 #' depths <- seq(0, 10, length.out = 21)
-#' colors <- inferno(length(dosat)/21, alpha = .5)
+#' colors <- viridis::inferno(length(dosat)/21, alpha = .5)
 #'
 #' plot(dosat[1:21], depths,
 #' type = "l", xlab = "DOsat",
