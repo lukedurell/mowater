@@ -45,18 +45,15 @@ hist(eml$DOsat)
 #- profile plots
 dosat  <- eml$DOsat
 depths <- seq(0, 10, length.out = 21)
-colors <- viridis::inferno(length(dosat)/21, alpha = .5)
 
 plot(dosat[1:21], depths,
 type = "l", xlab = "DOsat",
-xlim = c(-10, 220), ylim = c(10, 0),
-col = colors[1])
+xlim = c(-10, 220), ylim = c(10, 0))
 
 for (i in 2:(length(dosat)/21)) {
 last  <- i*21
 first <- last - 20
-lines(dosat[first:last], depths,
-col = colors[i])
+lines(dosat[first:last], depths)
 }
 
 }

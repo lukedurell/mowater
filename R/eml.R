@@ -30,7 +30,6 @@
 #' This lake is used to supply water to municipalities within the Dallas/Fort Worth area.
 #' See http://ec2-18-223-67-99.us-east-2.compute.amazonaws.com/test2/testIndex.html
 #'
-#' @importFrom viridis viridis
 #' @examples
 #' #- check out data
 #' head(eml)
@@ -41,18 +40,15 @@
 #' #- profile plots
 #' dosat  <- eml$DOsat
 #' depths <- seq(0, 10, length.out = 21)
-#' colors <- viridis::inferno(length(dosat)/21, alpha = .5)
 #'
 #' plot(dosat[1:21], depths,
 #' type = "l", xlab = "DOsat",
-#' xlim = c(-10, 220), ylim = c(10, 0),
-#' col = colors[1])
+#' xlim = c(-10, 220), ylim = c(10, 0))
 #'
 #' for (i in 2:(length(dosat)/21)) {
 #' last  <- i*21
 #' first <- last - 20
-#' lines(dosat[first:last], depths,
-#' col = colors[i])
+#' lines(dosat[first:last], depths)
 #' }
 #'
 "eml"
