@@ -3,14 +3,29 @@
 \docType{data}
 \name{urbanrural}
 \alias{urbanrural}
-\title{urbanrural}
+\title{Urban vs. Rural Improved Water Access Data}
 \format{
-An object of class \code{"data.frame"} with 5164 rows and 7 variables including country and code, year (unbalanced, about 15 years per country), water quality for urban and rural areas, population.
+An object of class \code{"data.frame"} with 5164 rows and
+7 columns:
+\describe{
+\item{entity}
+\item{code}
+\item{year}
+\item{urban}{Percent of urban population with access to clean drinking water}
+\item{rural}{Percent of rural population with access to clean drinking water}
+\item{pop}{Entity population}
+}
 }
 \usage{
-data(urbanrural)
+urbanrural
+data(urbanrural) # loads into working evironment
 }
 \description{
-Time series measuring water availability around the world.
+The Urban vs. Rural data is a Time Series measuring water
+availability in countries around the world. This data set contains
+information on 205 entities from 1990 to 2015.
+}
+\examples{
+
 }
 \keyword{datasets}
