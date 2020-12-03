@@ -9,25 +9,20 @@
 #' treatment.
 #' \describe{
 #'   \item{bins}{Do we want to include mini-descriptions here?}
-#'   \item{boulder}{}
-#'   \item{denver}{}
-#'   \item{DOC_baseflow}{}
-#'   \item{DOC_usgs}{}
-#'   \item{EML_day}{}
-#'   \item{EML_full}{}
-#'   \item{EML_week}{}
-#'   \item{filters}{}
-#'   \item{freshwater}{}
-#'   \item{LIFT}{}
-#'   \item{minesfault}{}
-#'   \item{precip}{}
-#'   \item{predictors}{}
-#'   \item{ROenergy}{}
-#'   \item{statewide}{}
-#'   \item{stations}{}
-#'   \item{superior}{}
-#'   \item{tds}{}
-#'   \item{urbanrural}{}
+#'   \item{boulder_ammonia}{}
+#'   \item{boulder_phos}{}
+#'   \item{cloth_filter}{}
+#'   \item{denver_filters}{}
+#'   \item{dissolved_carbon}{}
+#'   \item{eml}{}
+#'   \item{mines_fault}{}
+#'   \item{precip_type}{}
+#'   \item{reverse_osmosis}{}
+#'   \item{superior_aeration}{}
+#'   \item{tds_rivers}{}
+#'   \item{tx_reservoirs}{}
+#'   \item{urban_rural_water}{}
+#'   \item{water_stress}{}
 #' }
 #'
 
