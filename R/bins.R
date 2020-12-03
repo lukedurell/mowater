@@ -10,5 +10,4 @@
 #'
 #' @source Colorado Bureau of Recreation
 #'
-#' @examples
 "bins"
