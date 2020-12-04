@@ -21,4 +21,16 @@
 #'   \item{pop}{Entity population}
 #' }
 #'
+#' @examples
+#' #- compare proportion of urban access to rural acces in US
+#' us <- urban_rural_water[which(urban_rural_water$entity == "United States"),]
+#' mean(us$urban / us$rural)
+#'
+#' #-
+#' cols = c("yellow2", "turquoise4", "maroon4")
+#' eth <- urban_rural_water[which(urban_rural_water$entity == "Ethiopia"),]
+#' plot(1:26, eth$rural, col = cols[2], type = "l", ylim = c(0,100))
+#' lines(1:26, eth$urban, col = cols[3], type = "l")
+#' legend("left", c("urban", "rural"), col = cols[3:2], pch = "l", bg = "white")
+#'
 "urban_rural_water"
