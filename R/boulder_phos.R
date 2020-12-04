@@ -7,7 +7,30 @@
 #'
 #' @usage data(boulder_phos)
 #'
-#' @format An object of class \code{"list"} with seven data frames of flow data, phosphorous measurement, and grab sample results.
+#' @format An object of class \code{"list"} with seven data frames
+#' of flow data, phosphorous measurement, and grab sample results.
+#' \describe{
+#'   \item{avg_9_to_10_daily}{Daily flow data averages}
+#'   \item{dosing_daily}{Daily chemical dosing}
+#'   \item{flow_hourly}{Hourly flow data}
+#'   \item{lab_daily}{Daily aqueous lab and solids lab}
+#'   \item{Mixed_liqour_hourly}{Hourly mixed liquor channel profile}
+#'   \item{phosfax_10m}{Phosphorus in effluent}
+#'   \item{total_flow_daily}{Daily totalized flows}
+#' }
 #'
-#' @source City of Boulder, CO
+#' @source Christopher Marks for the City of Boulder Water Resource Recovery Facility (BWRRF)
+#'
+#' @examples
+#' #- Alum
+#' dose   <- boulder_phos[[2]]
+#' alum   <- dose[which(dose$coagulant == "Alum"),]
+#'
+#' plot(alum$Date, alum$solution_mass_lbs_day, type = "l",
+#' main = "Alum Addition", ylab = "Mass", xlab = "Date")
+#'
+#' #- Phosphorus
+#' phos <- boulder_phos[[6]]
+#' plot(phos$Date.Time, phos$op_conc_mg_p_l, type = "l", ylim = c(0, 6))
+#'
 "boulder_phos"
