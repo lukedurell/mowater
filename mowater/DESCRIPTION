@@ -1,0 +1,15 @@
+Package: mowater
+Title: Datasets for Data Science
+Version: 1.0
+Authors@R: c(
+    person(given = "Luke", family = "Durell", role = c("aut", "cre"), email = "luke_durell1@baylor.edu"),
+    person(given = "Mandy", family = "Hering", role = c("aut"), email = "mandy_hering@baylor.edu"))
+URL: https://github.com/lukedurell/mowater
+Description: Selected Datasets sourced from the MoWaTER project made accessible for Baylor University Introduction to Data Science students.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Depends: 
+    R (>= 3.5)
