@@ -4,7 +4,9 @@
 #'
 #' @docType data
 #'
-#' @usage data(tds_rivers)
+#' @usage
+#' tds_rivers
+#' data(tds_rivers) #- loads into working environment
 #'
 #' @format An object of class \code{"data.frame"} with 672 rows
 #' and 4 variables: year, date, tds in Lees and Hoover dams.

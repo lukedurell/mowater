@@ -11,7 +11,9 @@
 #'
 #' @docType data
 #'
-#' @usage data(reverse_osmosis)
+#' @usage
+#' reverse_osmosis
+#' data(reverse_osmosis)  #- loads into working environment
 #'
 #' @format An object of class \code{"data.frame"} with 25844 rows
 #' and 23 variables. Operational variables are flow rate, temperature, pressure,

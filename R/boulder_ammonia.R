@@ -11,7 +11,7 @@
 #'
 #' @usage
 #' boulder_ammonia
-#' data(boulder_ammonia) # loads into working environment
+#' data(boulder_ammonia) #- loads into working environment
 #'
 #' @format boulder_ammonia is an object of class \code{"data.frame"} with 25908
 #' rows and 16 columns.

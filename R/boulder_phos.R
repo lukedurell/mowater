@@ -5,7 +5,9 @@
 #'
 #' @docType data
 #'
-#' @usage data(boulder_phos)
+#' @usage
+#' boulder_phos
+#' data(boulder_phos) #- loads into working environment
 #'
 #' @format An object of class \code{"list"} with seven data frames
 #' of flow data, phosphorous measurement, and grab sample results.

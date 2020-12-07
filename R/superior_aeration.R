@@ -26,7 +26,7 @@
 #'
 #' @usage
 #' superior_aeration
-#' data(superior_aeration)
+#' data(superior_aeration)  #- loads into working environment
 #'
 #' @format An object of class \code{"list"} with three data
 #' frames.

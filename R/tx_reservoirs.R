@@ -4,7 +4,9 @@
 #'
 #' @docType data
 #'
-#' @usage data(tx_reservoirs)
+#' @usage
+#' tx_reservoirs
+#' data(tx_reservoirs) #- loads into working environment
 #'
 #' @format An object of class \code{"data.frame"} with around 315,000 obs. and 5 variables including date, storage amounts, capacity, percent full.
 #'

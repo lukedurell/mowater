@@ -8,7 +8,7 @@
 #'
 #' @usage
 #' urban_rural_water
-#' data(urban_rural_water) # loads into working evironment
+#' data(urban_rural_water) #- loads into working environment
 #'
 #' @format An object of class \code{"data.frame"} with 5164 rows and
 #' 7 columns:

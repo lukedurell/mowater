@@ -4,7 +4,9 @@
 #'
 #' @docType data
 #'
-#' @usage data(water_stress)
+#' @usage
+#' water_stress
+#' data(water_stress) #- loads into working environment
 #'
 #' @format An object of class \code{"data.frame"} with 662 rows and 5 variables including country, year, code, and withdrawal amount.
 #'

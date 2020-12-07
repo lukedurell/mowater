@@ -16,7 +16,7 @@
 #'
 #' @usage
 #' bins
-#' data(bins)
+#' data(bins) #- loads into working environment
 #'
 #' @format An object of class \code{"data.frame"} with 3414 rows and 29 columns.
 #' The variables include an id to specify bin, a Date variable, and numerous
