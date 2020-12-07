@@ -50,6 +50,7 @@
 #' lines(iceland$year, iceland$withdrawal, col = cols[4])
 #' legend("topright", c("SWE", "DNK", "FIN", "ISL"), col = cols, pch = "l", bg = "white")
 # library(maps)
+# library(viridis)
 #
 # country.names<-map('world', names=TRUE, plot=FALSE)
 # last.decade<-which((water_stress$year>2010 & water_stress$year<2020)==TRUE)

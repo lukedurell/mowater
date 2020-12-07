@@ -32,7 +32,6 @@
 #'
 #' @source Water Data for the Nation: The National Water Information System.
 #' Available online: https://www.usgs.gov/water-data-nation-national-water-information-system
-#'
 # @examples
 # library(lubridate)
 # library(viridis)
@@ -59,5 +58,4 @@
 # den.lat<- 39.7392
 # den.long<- -104.9903
 # points(den.long, den.lat, col=2, pch=8, cex=1.5)
-
 "dissolved_carbon"

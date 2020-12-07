@@ -1,6 +1,6 @@
 Package: mowater
 Title: Datasets for Data Science
-Version: 0.0.0.9000
+Version: 1.0
 Authors@R: c(
     person(given = "Luke", family = "Durell", role = c("aut", "cre"), email = "luke_durell1@baylor.edu"),
     person(given = "Mandy", family = "Hering", role = c("aut"), email = "mandy_hering@baylor.edu"))
@@ -13,3 +13,4 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Depends: 
     R (>= 3.5)
+Imports: fields, maps, viridis
