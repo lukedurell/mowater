@@ -5,19 +5,37 @@
 \alias{dissolved_carbon}
 \title{DOC Baseflow}
 \format{
-An object of class \code{"data.frame"} with 1174 rows and 32 variables including date, locations, Dissolved Organic Carbon, multiple environmental factors.
+An object of class \code{"list"} with two \code{"lists"}:
+\describe{
+\item{baseflow}{Spatial data with 32 variables including location,
+flow, landcover, and more.}
+\item{usgs}{Basic Station ID, location, and DOC data}
+}
 }
 \source{
-Unknown
+Water Data for the Nation: The National Water Information System.
+Available online: https://www.usgs.gov/water-data-nation-national-water-information-system
 }
 \usage{
-data(dissolved_carbon)
+dissolved_carbon
+data(dissolved_carbon) #- loads into working environment
 }
 \description{
-Time Series/Spatial dataset related to tracking Mountain Pine Beetles
-Dissolved Organic Carbon spatial time series, station data
-}
-\examples{
-plot(dissolved_carbon[[2]]$Latitude, dissolved_carbon[[2]]$Longitude)
+The dissolved carbon data set is from the U. S. Geological Survey.
+Dissolved organic carbon (DOC) in soils and water originates
+from the degradation of organic matter from plants and
+microorganisms. Processes altering forest
+and vegetation life cycles may have an indirect effect on surface
+water quality. In particular, DOC in streams can affect heterotrophic
+processes, act as a source for the nutrient cycle, absorb sunlight
+radiation, alter metal transport, and promote the production of
+carcinogenic byproducts during water treatment.
+This data set contains DOC measured in streams in the Rocky Mountains
+during base-flow conditions in the months of September, October, and
+November. Base-flow conditions are preferred because they are
+more representative of the longer-term (annual to decadal)
+impacts from forest disturbances and climate change,
+rather than short-term impacts of precipitation, runoff events,
+and snowmelt, which can occur at an hourly to monthly temporal scale.
 }
 \keyword{datasets}
