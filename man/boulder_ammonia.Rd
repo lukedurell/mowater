@@ -10,7 +10,7 @@ rows and 16 columns.
 }
 \usage{
 boulder_ammonia
-data(boulder_ammonia) # loads into working environment
+data(boulder_ammonia) #- loads into working environment
 }
 \description{
 The LIFT (Leaders Innovation Forum for Technology) data set

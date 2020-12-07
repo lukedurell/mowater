@@ -12,7 +12,8 @@ and 4 variables: year, date, tds in Lees and Hoover dams.
 Unknown
 }
 \usage{
-data(tds_rivers)
+tds_rivers
+data(tds_rivers) #- loads into working environment
 }
 \description{
 Time series of total dissolved solids in the Colorado river, measured at Lees and Hoover dams.
