@@ -40,25 +40,25 @@
 #' Consulting for the City of Superior, Colorado Rock Creek
 #' Wastewater Treatment Plant.
 #'
-#' @examples
-#'
-#' #- BOD
-#' cols <- viridis(3)
-#' ts.plot(process_control$flow_totals_inf_bod_lbs,
-#' col = cols[1], main = "Conductivity",
-#' ylab = "BOD lbs") # bod is food
-#'
-#' #- pH and Temp
-#' ts.plot(overview$influent_ph_daily_ph,
-#' col = cols[1], main = "pH Comparison",
-#' ylab = "pH") # wasting
-#' lines(overview$rock_ck_effluent_ph_daily_ph, col = cols[3])
-#' legend("bottomleft", c("Influent", "Effluent"), col = c(cols[1], cols[3]), pch = "l", bg = "white")
-#' ts.plot(overview$influent_ph_daily_temp,
-#' col = cols[1], main = "Temperature Comparison",
-#' ylab = "Temperature Celsius") # wasting
-#' lines(overview$rock_ck_effluent_ph_daily_temp,
-#' col = cols[3])
-#' legend("topleft", c("Influent", "Effluent"), col = c(cols[1], cols[3]), pch = "l", bg = "white")
-#'
+# @examples
+#
+# #- BOD
+# cols <- viridis(3)
+# ts.plot(process_control$flow_totals_inf_bod_lbs,
+# col = cols[1], main = "Conductivity",
+# ylab = "BOD lbs") # bod is food
+#
+# #- pH and Temp
+# ts.plot(overview$influent_ph_daily_ph,
+# col = cols[1], main = "pH Comparison",
+# ylab = "pH") # wasting
+# lines(overview$rock_ck_effluent_ph_daily_ph, col = cols[3])
+# legend("bottomleft", c("Influent", "Effluent"), col = c(cols[1], cols[3]), pch = "l", bg = "white")
+# ts.plot(overview$influent_ph_daily_temp,
+# col = cols[1], main = "Temperature Comparison",
+# ylab = "Temperature Celsius") # wasting
+# lines(overview$rock_ck_effluent_ph_daily_temp,
+# col = cols[3])
+# legend("topleft", c("Influent", "Effluent"), col = c(cols[1], cols[3]), pch = "l", bg = "white")
+#
 "superior_aeration"

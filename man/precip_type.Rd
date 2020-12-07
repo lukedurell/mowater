@@ -5,12 +5,20 @@
 \alias{precip_type}
 \title{Precipitation Study: predictors}
 \format{
-An object of class \code{"list"} with nine objects.
+An object of class \code{"list"} with two \code{"lists"}:
+\describe{
+\item{precip}{Station location and temperature data.}
+\item{predictors}{Temperature profiles, dates, locations, and precipitation type.}
+}
+}
+\source{
+Michael Scheuerer from NOAA’s Earth System Research Laboratories (ESRL) division, The US National Atmospheric and Oceanic Administration (NOAA) \link{https://www.ncdc.noaa.gov}
 }
 \usage{
 data(precip_type)
 }
 \description{
-Time series/Spatial profile dataset using atmospheric temperature to predict precipitation type.
+The precipitation type data set is a collection of data on weather
+conditions across the continental United States and Alaska.
 }
 \keyword{datasets}

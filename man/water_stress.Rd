@@ -51,7 +51,6 @@ lines(denmark$year, denmark$withdrawal, col = cols[2])
 lines(finland$year, finland$withdrawal, col = cols[3])
 lines(iceland$year, iceland$withdrawal, col = cols[4])
 legend("topright", c("SWE", "DNK", "FIN", "ISL"), col = cols, pch = "l", bg = "white")
-
 }
 \references{
 Unknown?
