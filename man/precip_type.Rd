@@ -12,7 +12,10 @@ An object of class \code{"list"} with two \code{"lists"}:
 }
 }
 \source{
-Michael Scheuerer from NOAA’s Earth System Research Laboratories (ESRL) division, The US National Atmospheric and Oceanic Administration (NOAA) \link{https://www.ncdc.noaa.gov}
+Michael Scheuerer from NOAA’s Earth System
+Research Laboratories (ESRL) division, The US National
+Atmospheric and Oceanic Administration (NOAA)
+https://www.ncdc.noaa.gov
 }
 \usage{
 data(precip_type)

@@ -13,7 +13,10 @@
 #'   \item{predictors}{Temperature profiles, dates, locations, and precipitation type.}
 #' }
 #'
-#' @source Michael Scheuerer from NOAA’s Earth System Research Laboratories (ESRL) division, The US National Atmospheric and Oceanic Administration (NOAA) [https://www.ncdc.noaa.gov]
+#' @source Michael Scheuerer from NOAA’s Earth System
+#' Research Laboratories (ESRL) division, The US National
+#' Atmospheric and Oceanic Administration (NOAA)
+#' https://www.ncdc.noaa.gov
 #'
 # profiles for Waco airport
 # library(viridis)

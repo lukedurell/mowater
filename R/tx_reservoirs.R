@@ -33,8 +33,7 @@
 #'
 #' @source Water Data for Texas, found at https://www.waterdatafortexas.org The Texas Water Development Board (TWDB) Water Science and Conservation group
 #'
-#' @example
-#'
+#' @examples
 #' #- visualize
 #' ts.plot(tx_reservoirs$percent_full)
 "tx_reservoirs"

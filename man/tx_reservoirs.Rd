@@ -38,4 +38,8 @@ The Texas reservoirs data set contains data on Texas reservoirs
 capacity and supply. This data set represents the aggregated data of
 all Texas reservoirs.
 }
+\examples{
+#- visualize
+ts.plot(tx_reservoirs$percent_full)
+}
 \keyword{datasets}
