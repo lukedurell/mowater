@@ -49,5 +49,20 @@
 #' lines(finland$year, finland$withdrawal, col = cols[3])
 #' lines(iceland$year, iceland$withdrawal, col = cols[4])
 #' legend("topright", c("SWE", "DNK", "FIN", "ISL"), col = cols, pch = "l", bg = "white")
-#'
+# library(maps)
+#
+# country.names<-map('world', names=TRUE, plot=FALSE)
+# last.decade<-which((water_stress$year>2010 & water_stress$year<2020)==TRUE)
+#
+# mm2<-match(country.names, water_stress$entity[last.decade])
+#
+# n.col<-10
+# mycolors<-(viridis(10))[n.col:1]
+# rates<-log(water_stress$withdrawal)[last.decade]
+# ind=cut(rates,round(c(quantile(rates, c(0.10, 0.20,0.30, 0.40,0.50, 0.60,0.70, 0.80,0.90))),1),right=FALSE)
+# thecolors=mycolors[ind[mm2]]
+#
+# map(database="world",names=TRUE,fill=TRUE,col=thecolors)
+# legend('left',legend=levels(ind),2,fill=mycolors,cex=1.2, bty="n")
+# title("2010-2019, Log Withdrawal",cex.main=1.5)
 "water_stress"
